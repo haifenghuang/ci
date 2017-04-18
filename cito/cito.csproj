@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1B9B162C-D890-416A-A7F5-866D0BC8C948}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>cito</RootNamespace>
+    <AssemblyName>cito</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CiDocLexer.cs" />
+    <Compile Include="CiDocParser.cs" />
+    <Compile Include="CiLexer.cs" />
+    <Compile Include="CiParser.cs" />
+    <Compile Include="CiResolver.cs" />
+    <Compile Include="CiTo.cs" />
+    <Compile Include="CiTree.cs" />
+    <Compile Include="SourceGenerator.cs" />
+    <Compile Include="CiMacroProcessor.cs" />
+    <Compile Include="SymbolTable.cs" />
+    <Compile Include="Generators\GenAs.cs" />
+    <Compile Include="Generators\GenC.cs" />
+    <Compile Include="Generators\GenC89.cs" />
+    <Compile Include="Generators\GenCs.cs" />
+    <Compile Include="Generators\GenD.cs" />
+    <Compile Include="Generators\GenJava.cs" />
+    <Compile Include="Generators\GenJs.cs" />
+    <Compile Include="Generators\GenJsWithTypedArrays.cs" />
+    <Compile Include="Generators\GenPerl5.cs" />
+    <Compile Include="Generators\GenPerl510.cs" />
+    <Compile Include="Generators\GenPerl58.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generators\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

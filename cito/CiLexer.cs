@@ -389,6 +389,8 @@ public class CiLexer
 				return CiToken.Greater;
 			case '~':
 				return CiToken.Not;
+			case '@':
+				return CiToken.Native;
 			case '?':
 				return CiToken.QuestionMark;
 			case ':':

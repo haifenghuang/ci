@@ -1,0 +1,1 @@
+- @ is short for one line native. For example @printf("Hello world"); 

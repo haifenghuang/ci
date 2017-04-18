@@ -4,9 +4,7 @@
 
 `cito` tool automatically translates the Ci programming language to C, Java, C#, JavaScript, ActionScript, Perl and D.
 
-The translated code is lightweight (no virtual machine, emulation or large runtime), human-readable and fits well the target language (including naming conventions and documentation comments).
-
-Current version of Ci doesn't support standalone programs or even console output,
+The translated code is lightweight (no virtual machine, emulation or large runtime), human-readable and fits well the target language (including naming conventions and documentation comments). Current version of Ci doesn't support standalone programs or even console output,
 so your **"Hello world"** could be the following library:
 
 ```cs

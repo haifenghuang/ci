@@ -1,6 +1,6 @@
 # Ci Programming Language
 
-**Ci** is automatically translatet language, aimed at crafting 'portable programming libraries', with syntax akin to C#.
+**Ci** is automatically translated language, aimed at crafting 'portable programming libraries', with syntax akin to C#.
 The translated code is lightweight (no virtual machine, emulation or large runtime), human-readable
 and fits well the target language (including naming conventions and documentation comments).
 `cito` tool automatically translates the [Ci programming language](ci.md)
@@ -60,11 +60,11 @@ cito -o HelloCi.java hello.ci
 
 # History
 
-## (2017-04-18)
+### (2017-04-18)
 
 - Fork on GitHub for future development
 
-## cito 0.4.0 (2013-05-18)
+### cito 0.4.0 (2013-05-18)
 
 - Perl 5 back-end.
 - Dynamic object allocation.
@@ -74,7 +74,7 @@ cito -o HelloCi.java hello.ci
 - C fix for code such as `if (cond) methodThatThrows(); else stmt();`
 - `cipad` opens files, has font selection and improved UI.
 
-## cito 0.3.0 (2013-02-15)
+### cito 0.3.0 (2013-02-15)
 
 - Class inheritance with virtual methods.
 - Dynamic array allocation.
@@ -82,7 +82,7 @@ cito -o HelloCi.java hello.ci
 - JavaScript Typed Arrays.
 - Installs Mono wrappers for `cito` and `cipad`.
 
-## cito 0.2.0 (2011-08-03)
+### cito 0.2.0 (2011-08-03)
 
 - Created `cipad` - a simple Ć editor with on-the-fly translation.
 - Changed syntax of arrays of storage: `MyClass[]()` -> `MyClass()[]`, `string[](8)` -> `string(8)[]`.
@@ -93,9 +93,9 @@ cito -o HelloCi.java hello.ci
 - Some optimizations for string handling in C.
 - Documentation translated to English.
 
-## cito 0.1.0 (2011-05-24)
+### cito 0.1.0 (2011-05-24)
 
-Initial release.
+- Initial release.
 
 # Authors
 - Piotr Fusik (Ci and cito)

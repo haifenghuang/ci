@@ -7,7 +7,7 @@ and fits well the target language (including naming conventions and documentatio
 to C, Java, C#, JavaScript, ActionScript, Perl and D.
 
 Current version of Ci doesn't support standalone programs or even console output,
-so your *"Hello world"* could be the following library:
+so your **"Hello world"** could be the following library:
 
 ```cs
 public class HelloCi
@@ -19,7 +19,7 @@ public class HelloCi
 }
 ```
 
-See **hello.ci** for a slightly bigger example.
+See [hello.ci](https://github.com/dasannikov/ci/blob/master/hello.ci) for a slightly bigger example.
 
 # How to install
 
@@ -43,8 +43,6 @@ exec /usr/bin/mono /usr/local/lib/cito/cito.exe "$@"
 ```
 
 so that you can type `cito` instead of `mono cito.exe`.
-
-If you want to compile `cito` from source code, see [compilation instructions](http://cito.sourceforge.net/INSTALL.html).
 
 # How to use
 

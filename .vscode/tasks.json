@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "cito. release build",
+            "command": "msbuild",
+            "isBuildCommand": true,
+            "args": ["./cito/cito.csproj", "/p:Configuration=Release"],
+            "showOutput": "always"
+        },
+		{
+            "taskName": "cito. debug build",
+            "command": "msbuild",
+            "args": ["./cito/cito.csproj"],
+            "showOutput": "always"
+        }
+    ]
+}

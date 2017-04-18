@@ -1,13 +1,13 @@
 # Ci Programming Language
 
-**Ci** is automatically translated language, aimed at crafting 'portable programming libraries', with syntax akin to C#.
+**Ci** is automatically translated language, aimed at crafting **portable programming libraries**, with syntax akin to C#.
 The translated code is lightweight (no virtual machine, emulation or large runtime), human-readable
 and fits well the target language (including naming conventions and documentation comments).
 `cito` tool automatically translates the [Ci programming language](ci.md)
 to C, Java, C#, JavaScript, ActionScript, Perl and D.
 
 Current version of Ci doesn't support standalone programs or even console output,
-so your *"Hello world"* could be the following 'library':
+so your *"Hello world"* could be the following library:
 
 ```cs
 public class HelloCi

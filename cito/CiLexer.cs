@@ -109,7 +109,8 @@ public enum CiToken
 	PreIf,
 	PreElIf,
 	PreElse,
-	PreEndIf
+	PreEndIf,
+	PreInclude
 }
 
 [Serializable]
@@ -315,6 +316,7 @@ public class CiLexer
 					case "elif": return CiToken.PreElIf;
 					case "else": return CiToken.PreElse;
 					case "endif": return CiToken.PreEndIf;
+					case "include": return CiToken.PreInclude;
 					default: throw new ParseException("Unknown preprocessor directive #" + s);
 					}
 				}

@@ -9,6 +9,7 @@
 		"**/.git": true,
 		"**/bin": true,
 		"**/obj": true,
+		"COPYING": true,
 		"**/.vscode": false
 	}
 }

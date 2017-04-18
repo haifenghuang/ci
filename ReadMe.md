@@ -10,10 +10,8 @@ Current version of Ci doesn't support standalone programs or even console output
 so your **"Hello world"** could be the following library:
 
 ```cs
-public class HelloCi
-{
-    public static string GetMessage()
-    {
+public class HelloCi {
+    public static string GetMessage() {
         return "Hello, world!";
     }
 }
